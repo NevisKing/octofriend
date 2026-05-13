@@ -15,6 +15,29 @@ octofriend
 octo
 ```
 
+## Nix / NixOS
+
+From the repo root:
+
+```bash
+nix develop
+npm ci
+npm run build
+npm run exec
+```
+
+Or run it directly with:
+
+```bash
+nix run . -- --help
+```
+
+Build the package with:
+
+```bash
+nix build .
+```
+
 ![octofriend](https://raw.githubusercontent.com/synthetic-lab/octofriend/main/octofriend.png)
 
 ## About
