@@ -18,7 +18,7 @@
           src = ./.;
 
           inherit nodejs;
-          npmDepsHash = "sha256-j4rAACBQbfDT7qLW4Po9MdRSV1yRwOd7WXTXgWeP4Mg=";
+          npmDepsHash = "sha256-VLYKwXmZ9f8Zl7ttd9LhC2Hqv2dGzHEQrdzbq6DdSPo=";
 
           nativeBuildInputs = with pkgs; [
             nodejs
