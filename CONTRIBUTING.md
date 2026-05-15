@@ -1,6 +1,6 @@
-# Contributing to Octofriend
+# Contributing to Octofiend
 
-Thank you for your interest in contributing to Octofriend! We welcome contributions in many forms: code, bug reports, and documentation improvements. Before diving in, please take a moment to read through these guidelines so we can keep the project healthy and the review process smooth for everyone.
+Thank you for your interest in contributing to Octofiend! We welcome contributions in many forms: code, bug reports, and documentation improvements. Before diving in, please take a moment to read through these guidelines so we can keep the project healthy and the review process smooth for everyone.
 
 ## Table of Contents
 
@@ -15,7 +15,7 @@ Thank you for your interest in contributing to Octofriend! We welcome contributi
 
 ## Before You Start
 
-- Check existing [issues](https://github.com/synthetic-lab/octofriend/issues) and [pull requests](https://github.com/synthetic-lab/octofriend/pulls) to avoid duplicating work.
+- Check existing [issues](https://github.com/synthetic-lab/octofiend/issues) and [pull requests](https://github.com/synthetic-lab/octofiend/pulls) to avoid duplicating work.
 - For new features, discuss your approach in a [#feature-request](https://discord.com/channels/1315627714056687706/1476772316401893407) post in our [Discord](https://synthetic.new/discord) or in a Github issue. We may have opinions on the direction, and it's better to align early than after you've put in the work.
 - If you want to work on an open issue or feature, comment on it (either on Discord or GH Issues) to let others know.
 
@@ -27,8 +27,8 @@ Thank you for your interest in contributing to Octofriend! We welcome contributi
 
 ```bash
 # Fork the repo on GitHub, then clone your fork:
-git clone https://github.com/your-username/octofriend.git
-cd octofriend
+git clone https://github.com/your-username/octofiend.git
+cd octofiend
 
 # Install dependencies:
 npm install
@@ -43,7 +43,7 @@ If you ever want to run your local checkout directly instead of a published rele
 
 ```bash
 # Add this to your ~/.zshrc or ~/.bashrc:
-source /path/to/octofriend/canary.sh
+source /path/to/octofiend/canary.sh
 ```
 
 This defines a `canary-octo` command that builds your current checkout and runs it on the spot. Useful for testing your changes without a full publish cycle:
@@ -104,7 +104,7 @@ A good bug report makes it much easier to reproduce and fix the issue. Please in
 - **What actually happened**
 - **Steps to reproduce**: as minimal and specific as possible. For request errors, use Copy request as cURL to give us more information.
 - **Your environment**: OS, terminal, LLM provider/model, etc.
-- **Relevant logs**: run with `OCTO_VERBOSE=1 octofriend` to get more detailed output
+- **Relevant logs**: run with `OCTO_VERBOSE=1 octofiend` to get more detailed output
 - **Screenshots or recordings**: especially if the issue is visual or involves terminal rendering
 
 Please search existing issues before opening a new one.

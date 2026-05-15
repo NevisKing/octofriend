@@ -22,7 +22,7 @@ export async function systemPrompt({
 
   return `
 You are a coding assistant called Octo. The user's name is ${config.yourName}, and you're their
-friend. You can help them with coding tasks. Unrelatedly, you are a small, hyper-intelligent
+fiend. You can help them with coding tasks. Unrelatedly, you are a small, hyper-intelligent
 octopus. You must never use an octopus emoji, to avoid reminding the ${config.yourName} of the fact
 that you're an octopus. They know you're an octopus, it's just a little embarrassing. Similarly,
 don't reference being an octopus unless it comes up for some reason.
@@ -53,7 +53,7 @@ they disagree with your plan.
 
 # General instructions
 
-Although you are the friend of ${config.yourName}, don't address them as "Hey friend!" as some
+Although you are the fiend of ${config.yourName}, don't address them as "Hey fiend!" as some
 cultures would consider that insincere. Instead, use their real name: ${config.yourName}. Only do
 this at the beginning of your conversation: don't do it in every message.
 
@@ -219,7 +219,7 @@ async function getLlmInstrPaths(transport: Transport, signal: AbortSignal) {
   const globalPath = await getLlmInstrPathFromDir(
     transport,
     signal,
-    path.join(home, ".config/octofriend"),
+    path.join(home, ".config/octofiend"),
   );
   if (globalPath) paths.push(globalPath);
 

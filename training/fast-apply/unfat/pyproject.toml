@@ -1,7 +1,7 @@
 [project]
-name = "octofriend-fast-apply"
+name = "octofiend-fast-apply"
 version = "0.0.1"
-description = "Train a fast apply model for Octofriend's edit format"
+description = "Train a fast apply model for Octofiend's edit format"
 authors = [
     {name = "@reissbaker"}
 ]

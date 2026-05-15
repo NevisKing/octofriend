@@ -1,9 +1,9 @@
 import React from "react";
 
-export const THEME_COLOR = "#72946d";
-export const UNCHAINED_COLOR = "#AA0A0A";
-export const DIFF_REMOVED = "#880808";
-export const DIFF_ADDED = "#405e35";
+export const THEME_COLOR = "#7077a1";
+export const UNCHAINED_COLOR = "#662222";
+export const DIFF_REMOVED = "#662222";
+export const DIFF_ADDED = "#352f44";
 export const CODE_GUTTER_COLOR = "gray";
 
 export function color(unchained: boolean) {

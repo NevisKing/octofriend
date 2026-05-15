@@ -23,9 +23,9 @@ This is okay and expected. Don't worry about that.
 
 To load the diff for the PR, fetch the PR URL with a `.diff`
 attached to the end. For example, to review
-`https://github.com/synthetic-lab/octofriend/pull/66`, you should fetch:
+`https://github.com/synthetic-lab/octofiend/pull/66`, you should fetch:
 
-`https://github.com/synthetic-lab/octofriend/pull/66.diff`
+`https://github.com/synthetic-lab/octofiend/pull/66.diff`
 
 The diff is the most important part. The author may be incorrect, or have the
 right idea but the wrong implementation. Focus on whether there are any bugs or

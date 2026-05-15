@@ -1,16 +1,16 @@
-Octo is a small, helpful, zero-telemetry, cephalopod-flavored coding assistant.
-Octo is your friend.
+Octo is a small, ominous, zero-telemetry, cephalopod-flavored coding assistant.
+Octo is your fiend.
 
 ## Get Started
 
 ```bash
-npm install --global octofriend
+npm install --global octofiend
 ```
 
 And then:
 
 ```bash
-octofriend
+octofiend
 # or, for short:
 octo
 ```
@@ -38,11 +38,11 @@ Build the package with:
 nix build .
 ```
 
-![octofriend](https://raw.githubusercontent.com/synthetic-lab/octofriend/main/octofriend.png)
+![octofiend](https://raw.githubusercontent.com/synthetic-lab/octofiend/main/octofiend.png)
 
 ## About
 
-Octo is a small, helpful, cephalopod-flavored coding assistant that works with
+Octo is a small, ominous, cephalopod-flavored coding assistant that works with
 any OpenAI-compatible or Anthropic-compatible LLM API, and allows you to switch
 models at will mid-conversation when a particular model gets stuck. Octo can
 optionally use (and we recommend using) ML models we custom-trained and
@@ -51,7 +51,7 @@ open-sourced ([1](https://huggingface.co/syntheticlab/diff-apply),
 call and code edit failures from the main coding models you're working with:
 the autofix models work with any coding LLM. Octo works great with Kimi K2.5,
 MiniMax M2.5, GPT-5.3, and Claude 4.6 (although pretty much any agentic
-coding model will work). Octo wants to help you because Octo is your friend.
+coding model will work). Octo hungers to help you.
 
 Octo has zero telemetry. Using Octo with a privacy-focused LLM provider (may we
 selfishly recommend [Synthetic](https://synthetic.new)?) means your code stays
@@ -68,7 +68,7 @@ web search tool.
 
 If you don't want to use Synthetic's search API, but you still want to use the
 web search tool, you can configure the `search` config in
-`~/.config/octofriend/octofriend.json5`:
+`~/.config/octofiend/octofiend.json5`:
 
 ```typescript
 {
@@ -96,7 +96,7 @@ so Octo doesn't try to call it.
 
 ## Demo
 
-[![Octo asciicast](https://raw.githubusercontent.com/synthetic-lab/octofriend/main/octo-asciicast.svg)](https://asciinema.org/a/728456)
+[![Octo asciicast](https://raw.githubusercontent.com/synthetic-lab/octofiend/main/octo-asciicast.svg)](https://asciinema.org/a/728456)
 
 ## Sandboxing Octo
 
@@ -147,7 +147,7 @@ everywhere, you can add an `OCTO.md` to your project, as well as a global
 `OCTO.md` in your home directory.
 
 If you don't want to clutter your home directory, you can also add a global
-rules file in `~/.config/octofriend/OCTO.md`.
+rules file in `~/.config/octofiend/OCTO.md`.
 
 ## Skills
 
@@ -183,9 +183,9 @@ This is okay and expected. Don't worry about that.
 
 To load the diff for the PR, fetch the PR URL with a `.diff`
 attached to the end. For example, to review
-`https://github.com/synthetic-lab/octofriend/pull/66`, you should fetch:
+`https://github.com/synthetic-lab/octofiend/pull/66`, you should fetch:
 
-`https://github.com/synthetic-lab/octofriend/pull/66.diff`
+`https://github.com/synthetic-lab/octofiend/pull/66.diff`
 
 The diff is the most important part. The author may be incorrect, or have the
 right idea but the wrong implementation. Focus on whether there are any bugs or
@@ -201,7 +201,7 @@ We automatically detect skills in the following places:
   directory.
 
 If there are more directories you want Octo to discover skills from, you can
-add them to your `~/.config/octofriend/octofriend.json5` config file like so:
+add them to your `~/.config/octofiend/octofiend.json5` config file like so:
 
 ```javascript
 skills: {
@@ -216,9 +216,9 @@ skills: {
 Octo can do a lot out of the box — pretty much anything is possible with enough
 Bash — but if you want access to rich data from an MCP server, it'll help Octo
 out a lot to just provide the MCP server directly instead of trying to contort
-its tentacles into crafting the right Bash-isms. After you run `octofriend` for
+its tentacles into crafting the right Bash-isms. After you run `octofiend` for
 the first time, you'll end up with a config file in
-`~/.config/octofriend/octofriend.json5`. To hook Octo up to your favorite MCP
+`~/.config/octofiend/octofiend.json5`. To hook Octo up to your favorite MCP
 server, add the following to the config file:
 
 ```json5
@@ -257,8 +257,8 @@ environment variable to use as a credential; just use any non-empty environment
 variable and it should work (since most local LLM server ignore credentials
 anyway).
 
-You can also edit the Octofriend config directly in
-`~/.config/octofriend/octofriend.json5`. Just add the following to your list of
+You can also edit the Octofiend config directly in
+`~/.config/octofiend/octofiend.json5`. Just add the following to your list of
 models:
 
 ```json5
@@ -277,14 +277,14 @@ underlying error messages from APIs or tool calls, run Octo with the
 `OCTO_VERBOSE` environment variable set to any truthy string; for example:
 
 ```bash
-OCTO_VERBOSE=1 octofriend
+OCTO_VERBOSE=1 octofiend
 ```
 
 ## Desktop notifications
 
 There's a hidden "Notifications" menu that only appears if you've configured
 desktop notifications. To configure desktop notifications, add a block like
-this to your `octofriend.json5`:
+this to your `octofiend.json5`:
 
 ```json5
 notifications: {

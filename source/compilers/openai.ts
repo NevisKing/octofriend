@@ -6,7 +6,7 @@ export function getDefaultOpenaiClient({ baseUrl, apiKey }: { baseUrl: string; a
     baseURL: baseUrl,
     apiKey,
     defaultHeaders: {
-      "User-Agent": `octofriend/${APP_METADATA.version}`,
+      "User-Agent": `octofiend/${APP_METADATA.version}`,
     },
   });
 }

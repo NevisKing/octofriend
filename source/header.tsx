@@ -10,7 +10,7 @@ type HeaderProps = {
 export const Header = ({ unchained }: HeaderProps) => {
   const font: figlet.Fonts = "Delta Corps Priest 1";
   const top = figlet.textSync("Octo", { font });
-  const bottom = figlet.textSync("Friend", { font });
+  const bottom = figlet.textSync("Fiend", { font });
   const themeColor = color(unchained);
 
   return (

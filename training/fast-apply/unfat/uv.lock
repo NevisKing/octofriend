@@ -679,7 +679,7 @@ wheels = [
 ]
 
 [[package]]
-name = "octofriend-fast-apply"
+name = "octofiend-fast-apply"
 version = "0.0.1"
 source = { virtual = "." }
 dependencies = [

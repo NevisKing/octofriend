@@ -1,10 +1,10 @@
 {
-  "name": "octofriend",
+  "name": "octofiend",
   "version": "0.0.53",
   "license": "MIT",
-  "repository": "github:synthetic-lab/octofriend",
+  "repository": "github:synthetic-lab/octofiend",
   "bin": {
-    "octofriend": "dist/source/cli.js",
+    "octofiend": "dist/source/cli.js",
     "octo": "dist/source/cli.js"
   },
   "type": "module",

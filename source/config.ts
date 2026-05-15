@@ -11,7 +11,7 @@ import { providerForBaseUrl, keyFromName, ProviderConfig } from "./providers.ts"
 
 const __dir = path.dirname(fileURLToPath(import.meta.url));
 
-const CONFIG_DIR = path.join(os.homedir(), ".config/octofriend");
+const CONFIG_DIR = path.join(os.homedir(), ".config/octofiend");
 const KEY_FILE = path.join(CONFIG_DIR, "keys.json5");
 const KeyConfigSchema = t.dict(t.str);
 export const DEFAULT_AUTOCOMPACT_THRESHOLD = 0.8;

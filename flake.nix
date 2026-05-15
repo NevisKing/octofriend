@@ -1,5 +1,5 @@
 {
-  description = "Octofriend development and runtime environment for NixOS";
+  description = "Octofiend development and runtime environment for NixOS";
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.05";
@@ -13,7 +13,7 @@
         nodejs = pkgs.nodejs_22;
       in {
         packages.default = pkgs.buildNpmPackage {
-          pname = "octofriend";
+          pname = "octofiend";
           version = "0.0.53";
           src = ./.;
 
@@ -34,10 +34,10 @@
           doCheck = false;
 
           meta = with pkgs.lib; {
-            description = "Small, helpful, zero-telemetry coding assistant";
-            homepage = "https://github.com/synthetic-lab/octofriend";
+            description = "Small, ominous, zero-telemetry coding assistant";
+            homepage = "https://github.com/synthetic-lab/octofiend";
             license = licenses.mit;
-            mainProgram = "octofriend";
+            mainProgram = "octofiend";
             platforms = platforms.linux ++ platforms.darwin;
           };
         };
@@ -61,7 +61,7 @@
 
           shellHook = ''
             export npm_config_build_from_source=true
-            echo "Octofriend Nix shell ready."
+            echo "Octofiend Nix shell ready."
             echo "Run: npm ci && npm run build"
           '';
         };

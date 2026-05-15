@@ -266,7 +266,7 @@ function BottomBar({
     getLatestVersion().then(latestVersion => {
       if (latestVersion && metadata.version < latestVersion) {
         setVersionCheck(
-          "New version released! Run `npm install -g --omit=dev octofriend` to update.",
+          "New version released! Run `npm install -g --omit=dev octofiend` to update.",
         );
         return;
       }
@@ -327,7 +327,7 @@ const PackageSchema = t.subtype({
 });
 async function getLatestVersion() {
   try {
-    const response = await fetch("https://registry.npmjs.com/octofriend");
+    const response = await fetch("https://registry.npmjs.com/octofiend");
     const contents = await response.json();
     const packageInfo = PackageSchema.slice(contents);
     return packageInfo["dist-tags"].latest;
@@ -867,7 +867,7 @@ function ToolRequestRenderer({
   if (noConfirmationNeeded || isRunning) {
     return (
       <Loading
-        overrideStrings={["Waiting", "Watching", "Smiling", "Hungering", "Splashing", "Writhing"]}
+        overrideStrings={["Waiting", "Watching", "Hungering", "Writhing", "Lurking", "Conjuring"]}
       />
     );
   }
@@ -903,7 +903,7 @@ const StaticItemRenderer = ({ item }: { item: StaticItem }) => {
     return (
       <Box marginLeft={1} marginTop={1}>
         <Text>
-          Octo is your friend. Tell Octo <Text color={themeColor}>what you want to do.</Text>
+          Octo is your fiend. Tell Octo <Text color={themeColor}>what you desire.</Text>
         </Text>
       </Box>
     );

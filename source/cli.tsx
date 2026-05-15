@@ -37,8 +37,8 @@ import { shutdownLspClients } from "./lsp/client.ts";
 
 const __dirname = import.meta.dirname;
 
-const CONFIG_STANDARD_DIR = path.join(os.homedir(), ".config/octofriend/");
-const CONFIG_JSON5_FILE = path.join(CONFIG_STANDARD_DIR, "octofriend.json5");
+const CONFIG_STANDARD_DIR = path.join(os.homedir(), ".config/octofiend/");
+const CONFIG_JSON5_FILE = path.join(CONFIG_STANDARD_DIR, "octofiend.json5");
 
 const cli = new Command()
   .description("If run with no subcommands, runs Octo interactively.")

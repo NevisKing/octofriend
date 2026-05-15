@@ -89,7 +89,7 @@ export async function connectMcpServer(
   }
 
   const client = new Client({
-    name: `octofriend-${serverName}`,
+    name: `octofiend-${serverName}`,
     version: "1.0.0",
   });
 

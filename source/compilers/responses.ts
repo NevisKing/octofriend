@@ -400,7 +400,7 @@ export const runResponsesAgent: Compiler = async ({
       baseURL: model.baseUrl,
       apiKey,
       headers: {
-        "User-Agent": `octofriend/${APP_METADATA.version}`,
+        "User-Agent": `octofiend/${APP_METADATA.version}`,
       },
     });
 

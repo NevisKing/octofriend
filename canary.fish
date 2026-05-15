@@ -2,20 +2,20 @@
 # Usage: source /path/to/canary.fish
 #
 # This creates a canary-octo function that will build whatever you have in your
-# current octofriend checkout and run it, allowing you to use the main branch
+# current octofiend checkout and run it, allowing you to use the main branch
 # without waiting for new octo releases, or to use an in-development branch
 # easily.
 
-set -g _OCTOFRIEND_DIR (status dirname)
+set -g _OCTOFIEND_DIR (status dirname)
 
 function canary-octo
     set -l old_dir (pwd)
-    cd "$_OCTOFRIEND_DIR"
+    cd "$_OCTOFIEND_DIR"
     if not npm run build
         cd "$old_dir"
         return 1
     end
     cd "$old_dir"
     set -gx CANARY_OCTO 1
-    node "$_OCTOFRIEND_DIR/dist/source/cli.js" $argv
+    node "$_OCTOFIEND_DIR/dist/source/cli.js" $argv
 end

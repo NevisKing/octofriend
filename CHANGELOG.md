@@ -106,7 +106,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 - Initial support for [Agent Skills](https://agentskills.io/). Agent skills
   are read by default from `~/.config/agents/skills`, but the path can be
-  configured in `~/.config/octofriend/octofriend.json5`.
+  configured in `~/.config/octofiend/octofiend.json5`.
 
 ### Changed
 
@@ -358,17 +358,17 @@ tps`.
   variables for API key management. If the default env var isn't detected —
   like, say, `SYNTHETIC_API_KEY` for Synthetic models — you're now able to set
   an API key within Octo. Keys are stored in a special
-  `~/.config/octofriend/keys.json5` file, so that you can keep your main
-  `~/.config/octofriend.json5` config in dotfiles repositories without leaking
+  `~/.config/octofiend/keys.json5` file, so that you can keep your main
+  `~/.config/octofiend.json5` config in dotfiles repositories without leaking
   secret API keys.
 
 - Octo will automatically prompt you to re-auth on boot if your config lists a
   default model or autofix models for which you no longer have auth info for
   (either you no longer export the API key env var in your shell, or you no
   longer have a `keys.json5` file — for example, if you're setting up a new
-  machine and have synced your `octofriend.json5` via a dotfiles repo).
+  machine and have synced your `octofiend.json5` via a dotfiles repo).
 
-- Octo can now be accessed either via `octofriend` or just `octo` for short.
+- Octo can now be accessed either via `octofiend` or just `octo` for short.
 
 ### Changed
 

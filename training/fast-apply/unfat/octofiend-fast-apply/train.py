@@ -22,7 +22,7 @@ train_config = llama_3_1_8b_axolotl(
         evals_per_epoch=4,
         learning_rate=4e-4,
         wandb_api_key=os.environ["WANDB_API_KEY"],
-        wandb_project="octofriend-fast-apply",
+        wandb_project="octofiend-fast-apply",
     ),
     warmup_steps=10,
 )
